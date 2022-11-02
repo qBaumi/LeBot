@@ -18,7 +18,7 @@ ROLEASSIGNMENT_MESSAGE_ID = 1037133543886819428
 @client.event
 async def on_ready():
     print('starting...')
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="to you malding"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="you malding"))
     for g in guilds:
         await client.tree.sync(guild=g)
     print("started")
